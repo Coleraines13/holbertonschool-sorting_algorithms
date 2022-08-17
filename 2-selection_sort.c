@@ -12,7 +12,7 @@ void int_swap(int *current, int *next)
 
 	tmp = *current;
 	*current = *next;
-	*next = *tmp;
+	*next = tmp;
 }
 
 /**
@@ -27,6 +27,9 @@ void selection_sort(int *array, size_t size)
 	size_t i, j;
 
 	if (array == NULL || size < 2)
+		return;
+
+	for (i = 0; i < size - 1; i++)
 	{
 		temp = array + i;
 		for (j = i + 1; j < size; j++)
