@@ -16,7 +16,7 @@ void int_swap(int *current, int *next)
 }
 
 /**
- * selection_sort = sorting the array of algos
+ * selection_sort - sorting the array of algos
  * @array: an array of integers
  * @size: the size of the array
  * Return: always 0
